@@ -106,7 +106,7 @@ while auxDate:
 		auxHours = ws.cell(row=j, column=i).value
 		if auxHours:
 			#print(auxHours)
-			auxHours = auxHours.split('+')		
+			auxHours = str(auxHours).split('+')		
 			if len(auxHours) == 1:
 				auxHours.append('0')
 				
